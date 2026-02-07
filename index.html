@@ -69,6 +69,8 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-folder2-open navicon"></i> Projects</a></li>
+
          <li>
   <a class="nav-link" href="#my-hobbies">
     <i class="bi bi-hdd-stack navicon"></i> My Hobbies
@@ -290,7 +292,6 @@
           <p><em>University of Asia Pacific</em></p>
           <span>2023 – Present</span>
         </div>
-
         <div class="resume-item card">
           <h4>Higher Secondary Certificate (HSC)</h4>
           <p><em>Satkhira Government College</em></p>
@@ -304,40 +305,131 @@
         </div>
       </div>
 
-      <!-- Projects Column -->
-      <div class="col-lg-6 resume-col">
-  <h3 class="resume-heading">💻 Projects</h3>
+      <!-- Achievements Column -->
+<div class="col-lg-6 resume-col">
+  <h3 class="resume-heading">🏆 Achievements</h3>
 
-  <!-- Project 1 -->
-  <div class="resume-item card">
-    <h4 class="project-title">Library Management System</h4>
-    <p class="project-desc">
-      A digital platform designed to efficiently manage books, users, and borrowing records, streamlining library operations.
-    </p>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="resume-item card">
-    <h4 class="project-title">Disaster Relief Resource Management System</h4>
-    <p class="project-desc">
-      A platform to track, allocate, and manage emergency resources effectively during disaster relief operations.
-    </p>
+  <div class="resume-item card mb-3 p-3 shadow-sm d-flex align-items-center">
+    <img src="assets/img/portfolio/WhatsApp Image 2026-02-07 at 11.47.45 AM.jpeg"
+         alt="Award Icon"
+         style="width:200px; height:auto; border-radius:18px; margin-right:20px;">
+    <p class="mb-0"><b>Recipient of the Dean’s Award from the Faculty of Computer Science and Engineering in Spring 2024 and Spring 2025.</b></p>
   </div>
 </div>
-
-
-    <!-- Second Row: Achievements -->
-    <div class="row mt-4">
-      <div class="col-12 resume-col">
-        <h3 class="resume-heading">🏆 Achievements</h3>
-
-        <div class="resume-item card">
-
-          <p>Recipient of the Dean’s Award from the Faculty of Computer Science and Engineering in Spring 2024 and Spring 2025.</p>
-      </div>
     </div>
   </div>
 </section>
+
+<<!-- ===== Projects Section ===== -->
+<!-- ======= Projects Section (2 Columns with GitHub Icon) ======= -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <p class="subtitle">Some of my recent works</p>
+
+  <div class="project-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="assets/img/portfolio/online-library-system.jpg" alt="Library System" class="project-img">
+      <h3>📚 Library Management System</h3>
+      <p>A Java-based team project implementing core OOP principles to manage books, members, borrowing, and return operations efficiently.</p>
+      <span class="tech">Java • Javafx • OOP • File Handling • Team project</span>
+      <a href="https://github.com/23201071-code/Library-management-system" target="_blank" class="github-link">
+        <i class="bi bi-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="assets/img/portfolio/158-1582144_disaster-management-solution-for-natural-disaster.png" alt="Disaster Relief" class="project-img">
+      <h3>🌍 Disaster Relief Resource Management System</h3>
+      <p>A database-driven system designed using ER modeling and SQL to efficiently manage users, resources, allocations, and reports.
+</p>
+      <span class="tech">SQL Server • Database • Reporting • Team project </span>
+      <a href="https://github.com/yourusername/DisasterReliefSystem" target="_blank" class="github-link">
+        <i class="bi bi-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CSS ======= -->
+<style>
+.projects {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-card .tech {
+  display: block;
+  font-size: 13px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.github-link {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.github-link i {
+  margin-right: 5px;
+}
+
+.github-link:hover {
+  background-color: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 
 
    <!-- ======= Hobbies Section ======= -->
@@ -351,37 +443,40 @@
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row g-4">
 
-      <!-- Hobby 1 -->
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="hobby-item text-center">
-          <img src="assets/img/portfolio/pngtree-illustration-student-reading-a-book-png-image_10159476.png" class="img-fluid rounded" alt="Reading">
-          <h4 class="mt-2">Reading Books</h4>
-        </div>
-      </div>
+      <div class="row g-4">
+  <!-- Hobby 1 -->
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="hobby-item text-center">
+      <img src="assets/img/portfolio/pngtree-illustration-student-reading-a-book-png-image_10159476.png" class="img-fluid rounded" alt="Reading">
+      <h4 class="mt-2">Reading Books</h4>
+    </div>
+  </div>
 
-      <!-- Hobby 2 -->
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="hobby-item text-center">
-          <img src="assets/img/portfolio/pngtree-a-person-travels-images-girl-with-luggage-png-image_13001412.png" class="img-fluid rounded" alt="Traveling">
-          <h4 class="mt-2">Traveling</h4>
-        </div>
-      </div>
+  <!-- Hobby 2 -->
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="hobby-item text-center">
+      <img src="assets/img/portfolio/pngtree-a-person-travels-images-girl-with-luggage-png-image_13001412.png" class="img-fluid rounded" alt="Traveling">
+      <h4 class="mt-2">Traveling</h4>
+    </div>
+  </div>
 
-      <!-- Hobby 3 -->
-<div class="col-lg-3 col-md-6 col-12">
-  <div class="hobby-item text-center">
-    <img src="assets/img/portfolio/pngtree-green-pants-cartoon-photographer-holding-a-camera-to-shoot-insects-png-image_3236452.jpg" alt="Photography" class="hobby-img">
-    <h4 class="mt-2">Photography</h4>
+  <!-- Hobby 3 -->
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="hobby-item text-center">
+      <img src="assets/img/portfolio/pngtree-green-pants-cartoon-photographer-holding-a-camera-to-shoot-insects-png-image_3236452.jpg" class="img-fluid rounded" alt="Photography">
+      <h4 class="mt-2">Photography</h4>
+    </div>
+  </div>
+
+  <!-- Hobby 4 -->
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="hobby-item text-center">
+      <img src="assets/img/portfolio/watering-cans-garden-clip-art-kids-gardening.jpg" class="img-fluid rounded" alt="Editing Picture">
+      <h4 class="mt-2">Gardening</h4>
+    </div>
   </div>
 </div>
 
-      <!-- Hobby 4 -->
-      <div class="col-lg-3 col-md-6 col-12">
-        <div class="hobby-item text-center">
-          <img src="assets/img/portfolio/watering-cans-garden-clip-art-kids-gardening.jpg" class="img-fluid rounded" alt="Gardening">
-          <h4 class="mt-2">Gardening</h4>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -411,7 +506,7 @@
             <i class="bi bi-telephone flex-shrink-0 me-3 fs-4"></i>
             <div>
               <h3>Call Us</h3>
-              <p>+8801763703924</p>
+              <p>+8801785848287</p>
             </div>
           </div><!-- End Info Item -->
 
